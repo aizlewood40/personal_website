@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import { NextPage } from "next";
+import React from "react";
 
-export default class extends Component {
-  render () {
-    return (
-      <div>Your Next.js App</div>
-    )
-  }
-}
+export const Index: NextPage = () => {
+  return <div>Your Next.js App</div>;
+};
+
+Index.displayName = "Pages:Index";
+
+export default Index;
