@@ -1,8 +1,16 @@
 import { NextPage } from "next";
 import React from "react";
 
+// Style
+import styles from "./index.scss";
+
 export const Index: NextPage = () => {
-  return <div>Your Next.js App</div>;
+  return (
+    <React.Fragment>
+      <style jsx={styles.toString()}>{styles}</style>
+      <div className="title">Your Next.js App</div>
+    </React.Fragment>
+  );
 };
 
 Index.displayName = "Pages:Index";
